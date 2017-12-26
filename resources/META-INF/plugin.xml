@@ -1,0 +1,22 @@
+<idea-plugin>
+  <id>com.github.syuchan1005.npmscriptrunner</id>
+  <name>NPM Script Runner</name>
+  <version>1.0</version>
+  <vendor url="https://twitter.com/syu_chan_1005" email="syuchan.dev@gmail.com">syuchan1005</vendor>
+
+  <description><![CDATA[
+      Nodejs package.json scripts runner.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      first release.
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="145.0"/>
+  <depends>JavaScript</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <runLineMarkerContributor language="JSON" implementationClass="com.github.syuchan1005.npmscriptrunner.NpmRunLineMarkerContributor" />
+  </extensions>
+</idea-plugin>
